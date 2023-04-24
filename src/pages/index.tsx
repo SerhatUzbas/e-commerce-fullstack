@@ -10,6 +10,8 @@ import karaca from '../../public/karaca.webp'
 import Announcements from 'src/components/Announcements'
 import CategoryHeaderText from 'src/components/texts/CategoryHeaderText'
 import CategoryHeader from 'src/components/CategoryHeader'
+import HighlightedContents from 'src/components/HighlightedContents'
+import SearchBox from 'src/components/SearchBox'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +26,13 @@ export default function Home({ children }: { children: ReactNode }) {
 			</Head>
 			<Box w='100%' h='100%'>
 				<Stack align='center' h={500}>
+					<SearchBox
+						data={[
+							{ label: 'askı', value: 'askı' },
+							{ label: 'bardak', value: 'bardak' },
+						]}
+						w={700}
+					/>
 					<GrayText>Graytext</GrayText>
 					<TextWithIcon text='Giriş Yap' Icon={User} />
 					<CategoryHeaderText>Category Header </CategoryHeaderText>
@@ -40,6 +49,27 @@ export default function Home({ children }: { children: ReactNode }) {
 						</Grid.Col>
 					</Grid>
 					<CategoryHeader text='Elektronik' />
+
+					<Grid w='100%'>
+						<Grid.Col md={4}>
+							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+						</Grid.Col>
+						<Grid.Col md={4}>
+							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+						</Grid.Col>
+						<Grid.Col md={4}>
+							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+						</Grid.Col>
+						<Grid.Col md={4}>
+							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+						</Grid.Col>
+						<Grid.Col md={4}>
+							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+						</Grid.Col>
+						<Grid.Col md={4}>
+							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+						</Grid.Col>
+					</Grid>
 				</Stack>
 			</Box>
 		</>

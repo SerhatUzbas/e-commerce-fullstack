@@ -1,6 +1,5 @@
-import { CSSObject, Text, TextProps } from '@mantine/core'
-import { CssVariable } from 'next/dist/compiled/@next/font'
-import React, { CSSProperties } from 'react'
+import { CSSProperties } from 'react'
+import { Text, TextProps } from '@mantine/core'
 import { source_sans_semibold } from 'src/styles/global_classes'
 
 interface CategoryHeaderTextProps extends TextProps {
