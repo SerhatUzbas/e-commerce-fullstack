@@ -1,0 +1,373 @@
+import { CategoryNavProps } from './CategoryNav'
+import { CategoryPopoverProps } from './CategoryPopover'
+
+export const CONSTANT_CAT_LIST: CategoryNavProps['topCategories'] = [
+	{
+		category: 'asd',
+		details: [
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+		],
+	},
+	{
+		category: 'asd',
+		details: [
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+		],
+	},
+	{
+		category: 'asd',
+		details: [
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+		],
+	},
+	{
+		category: 'asd',
+		details: [
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+			[
+				{
+					header: 'GİYİM',
+					list: [
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+						{ text: 'Tişört', url: 'tişört' },
+						{ text: 'Şort', url: 'sort' },
+					],
+				},
+				{
+					header: 'AYAKKABI',
+					list: [
+						{ text: 'Spor', url: 'spor' },
+						{ text: 'Günlük', url: 'günlük' },
+						{ text: 'Yürüyüş', url: 'yürüyüş' },
+						{ text: 'terlik', url: 'terlik' },
+						{ text: 'Klasik', url: 'klasik' },
+						{ text: 'Bot', url: 'bot' },
+						{ text: 'Tişört', url: 'tişört' },
+					],
+				},
+			],
+		],
+	},
+]

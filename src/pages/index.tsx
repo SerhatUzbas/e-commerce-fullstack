@@ -1,17 +1,13 @@
+import { ReactNode } from 'react'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Box, Grid, Stack } from '@mantine/core'
-import { ReactNode } from 'react'
-import GrayText from 'src/components/texts/GrayText'
-import TextWithIcon from 'src/components/TextWithIcon'
-import { User } from 'tabler-icons-react'
-import BrandBox from 'src/components/BrandBox'
-import karaca from '../../public/karaca.webp'
+import { Box, Flex, Grid } from '@mantine/core'
+import { Carousel } from '@mantine/carousel'
+import BrandBox, { BrandBoxProps } from 'src/components/BrandBox'
 import Announcements from 'src/components/Announcements'
-import CategoryHeaderText from 'src/components/texts/CategoryHeaderText'
-import CategoryHeader from 'src/components/CategoryHeader'
 import HighlightedContents from 'src/components/HighlightedContents'
-import SearchBox from 'src/components/SearchBox'
+import Layout from 'src/layouts/Layout'
+import { BRANDBOX_CONSTANTS } from 'src/lib/layout_constants'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,54 +20,78 @@ export default function Home({ children }: { children: ReactNode }) {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Box w='100%' h='100%'>
-				<Stack align='center' h={500}>
-					<SearchBox
-						data={[
-							{ label: 'askı', value: 'askı' },
-							{ label: 'bardak', value: 'bardak' },
-						]}
-						w={700}
-					/>
-					<GrayText>Graytext</GrayText>
-					<TextWithIcon text='Giriş Yap' Icon={User} />
-					<CategoryHeaderText>Category Header </CategoryHeaderText>
-					<BrandBox name='Karaca' src='/karaca.webp' />
-					<Grid w={'100%'}>
-						<Grid.Col md={4}>
-							<Announcements text='Bu Yılın En İyi İndirmleri' gradientColors={['#469300', '#6df5c3']} />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<Announcements text='Bu Yılın En İyi İndirmleri' gradientColors={['#469300', '#6df5c3']} />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<Announcements text='Bu Yılın En İyi İndirmleri' gradientColors={['#469300', '#6df5c3']} />
-						</Grid.Col>
-					</Grid>
-					<CategoryHeader text='Elektronik' />
 
-					<Grid w='100%'>
-						<Grid.Col md={4}>
-							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
-						</Grid.Col>
-						<Grid.Col md={4}>
-							<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
-						</Grid.Col>
-					</Grid>
-				</Stack>
-			</Box>
+			<Layout>
+				<BrandBoxContainer data={BRANDBOX_CONSTANTS} />
+				<AnnouncementsContainer />
+				<HighlightedContentsContainer />
+			</Layout>
 		</>
+	)
+}
+
+interface BrandBoxContainerProps {
+	data: BrandBoxProps[]
+}
+
+const BrandBoxContainer = ({ data }: BrandBoxContainerProps) => {
+	return (
+		<Box>
+			<Carousel align={'start'} slideGap={47} slideSize='7%' dragFree containScroll='keepSnaps' styles={{ control: { marginTop: -15, marginRight: -50, marginLeft: -50 } }}>
+				{data?.map((item) => (
+					<Carousel.Slide>
+						<BrandBox name={item.name} src={item.src} />
+					</Carousel.Slide>
+				))}
+			</Carousel>
+		</Box>
+	)
+}
+
+const AnnouncementsContainer = () => {
+	return (
+		<Box>
+			<Flex gap={20} justify='space-between' align='center'>
+				<Announcements text='Sepete En Çok Eklenenler' textColor='#0d7538' gradientColors={['#effbf5', '#effbf5']} />
+				<Announcements text='Sepete En Çok Eklenenler' textColor='#ac4f14' gradientColors={['#fef4ec', '#fef4ec']} />
+				<Announcements text='Sepete En Çok Eklenenler' textColor='#ac375a' gradientColors={['#fef0f2', '#fef0f2']} />
+			</Flex>
+		</Box>
+	)
+}
+
+const HighlightedContentsContainer = () => {
+	return (
+		<Box mt={40}>
+			<Grid gutter={25}>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+				<Grid.Col md={4}>
+					<HighlightedContents src='/high1.webp' text='adidas & Puma & Reebok' />
+				</Grid.Col>
+			</Grid>
+		</Box>
 	)
 }

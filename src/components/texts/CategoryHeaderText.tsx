@@ -8,7 +8,7 @@ interface CategoryHeaderTextProps extends TextProps {
 
 const CategoryHeaderText = ({ children, textTransform = 'uppercase', ...props }: CategoryHeaderTextProps) => {
 	return (
-		<Text size={14} color='#333333' style={{ textTransform, letterSpacing: 0.18, lineHeight: '34px', ...source_sans_semibold.style }} {...props}>
+		<Text size={14} color='#333333' style={{ textTransform, letterSpacing: 0.18, lineHeight: '34px', cursor: 'pointer', ...source_sans_semibold.style }} {...props}>
 			{children}
 		</Text>
 	)
