@@ -1,7 +1,8 @@
+import { ProductHighlightProp } from '../product/ProductHighlight'
 import { CategoryNavProps } from './CategoryNav'
 import { CategoryPopoverProps } from './CategoryPopover'
 
-export const CONSTANT_CAT_LIST: CategoryNavProps['topCategories'] = [
+export const CONSTANT_CAT_LIST = [
 	{
 		category: 'asd',
 		details: [
@@ -371,3 +372,18 @@ export const CONSTANT_CAT_LIST: CategoryNavProps['topCategories'] = [
 		],
 	},
 ]
+
+export const PRODUCT_HL: ProductHighlightProp['data'] = {
+	image: '/product.webp',
+	brand: 'Adidas',
+	model: 'aditru',
+	class: ' Gri Outdoor Ayakkabı',
+	link: '',
+	rating: 4,
+	rateCount: 1241,
+	standartPrice: 891,
+	discountedPrice: 682,
+	extraExp: 'Son 30 günün en düşük fiyatı',
+	isStary: false,
+	isMostSelling: true,
+}
