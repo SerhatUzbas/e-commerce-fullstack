@@ -23,13 +23,15 @@
     "embla-carousel-react": "^8.0.0-rc01",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "immer": "^10.0.1",
     "init": "^0.1.2",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "storybook": "^7.0.7",
     "tabler-icons-react": "^1.56.0",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.0.7",

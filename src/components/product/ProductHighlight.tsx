@@ -6,7 +6,7 @@ import { BorderRadius } from 'tabler-icons-react'
 import Like from './Like'
 
 export interface ProductHighlightProp extends BoxProps {
-	data?: {
+	data: {
 		image: string
 		brand: string
 		model: string
