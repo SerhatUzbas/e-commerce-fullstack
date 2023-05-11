@@ -1,13 +1,14 @@
 import { ReactNode } from 'react'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Box, Flex, Grid } from '@mantine/core'
+import { Box, Flex, Grid, Stack } from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
 import BrandBox, { BrandBoxProps } from 'src/components/BrandBox'
 import Announcements from 'src/components/Announcements'
 import HighlightedContents from 'src/components/HighlightedContents'
 import Layout from 'src/layouts/Layout'
 import { BRANDBOX_CONSTANTS } from 'src/lib/layout_constants'
+// import { ChartLoader, Circle, CompactLoader, ImageLoader, Row, TabLoader } from 'skeleton-react-loader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,22 @@ export default function Home({ children }: { children: ReactNode }) {
 			</Head>
 
 			<Layout>
+				{/* <Stack>
+					<Row />
+					<Circle />
+					<Box h={400}>
+						<ChartLoader barCount={12} />
+					</Box>
+					<Box h={300}>
+						<ImageLoader src='/mostsell.webp' height='100%' imageWidth='15%' />
+					</Box>
+					<Box h={300}>
+						<TabLoader bg='red' color='black' tabWidth={200} tabHeight={40} />
+					</Box>
+					<Box h={500} bg='blue'>
+						<CompactLoader direction='row' rowOrder={2} rowCount={5} barChartLoaderOrder={3} circleLoaderOrder={1} elementGap={140} barChartProps={{ barCount: 12, barGap: 5 }} />
+					</Box>
+				</Stack> */}
 				<BrandBoxContainer data={BRANDBOX_CONSTANTS} />
 				<AnnouncementsContainer />
 				<HighlightedContentsContainer />

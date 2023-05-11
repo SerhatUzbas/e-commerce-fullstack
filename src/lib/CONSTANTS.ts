@@ -638,4 +638,45 @@ export const SIDEBAR_DATA: SideBarProps['data'] = [
 			{ label: 'Kadın', value: 123 },
 		],
 	},
+
+	{
+		title: 'Beden',
+		isCheckBox: true,
+		data: [
+			{ label: 'XXS', value: 12341243 },
+			{ label: 'XS', value: 41212412 },
+			{ label: 'S', value: 1231242412 },
+			{ label: 'M', value: 1231412412 },
+			{ label: 'L', value: 123141234512 },
+			{ label: 'XL', value: 12351234 },
+			{ label: 'XXL', value: 12321455 },
+		],
+	},
+	{
+		title: 'Fiyat',
+		isCheckBox: true,
+		data: [
+			{ label: '0-500', value: 12341569243 },
+			{ label: '500-1000', value: 412152412 },
+			{ label: '1000-1500', value: 1236912412 },
+			{ label: '1500-2000', value: 123694112412 },
+			{ label: '2000-3000', value: 123457124534512 },
+			{ label: '3000-4000', value: 1232251234 },
+			{ label: '4000+', value: 123251251455 },
+		],
+	},
+	{
+		title: 'Renk',
+		isCheckBox: true,
+		data: [
+			{ label: 'Kırmızı', value: 12341512243 },
+			{ label: 'Sarı', value: 412121512412 },
+			{ label: 'Mavi', value: 12315122412 },
+			{ label: 'Yeşil', value: 12312455112 },
+			{ label: 'Turuncu', value: 12321232314512 },
+			{ label: 'Turkuaz', value: 1452351234 },
+			{ label: 'Siyah', value: 123215455 },
+			{ label: 'Beyaz', value: 111252321455 },
+		],
+	},
 ]

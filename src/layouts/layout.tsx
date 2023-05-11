@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import Image from 'next/image'
-import { Box, Flex, Stack } from '@mantine/core'
+import { Box, Divider, Flex, Stack } from '@mantine/core'
 import { useViewportSize } from '@mantine/hooks'
 import GrayText from 'src/components/texts/GrayText'
 import CategoryNav from 'src/components/category/CategoryNav'
@@ -13,7 +13,6 @@ import { ShoppingCart } from 'tabler-icons-react'
 const Layout = ({ children }: { children: ReactNode }) => {
 	const { width } = useViewportSize()
 	const smaller1300 = width < 1300
-	console.log((width - 1300) / 2)
 
 	return (
 		<Box ml={smaller1300 ? 0 : (width - 1200) / 2} miw={1200} maw={1200}>
@@ -33,7 +32,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
 					</Flex>
 				</Flex>
 				<CategoryNav />
-				{children}
+				<Divider />
+				<Box mt={8}>{children}</Box>
 			</Stack>
 		</Box>
 	)

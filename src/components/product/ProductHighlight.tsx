@@ -25,7 +25,7 @@ export interface ProductHighlightProp extends BoxProps {
 const ProductHighlight = ({ data, ...props }: ProductHighlightProp) => {
 	const { classes } = useStyles()
 	return (
-		<Box h={496} maw={220} p={8} style={{ border: '1px solid #E6E6E6', borderRadius: 8, cursor: 'pointer' }} {...props}>
+		<Box h={496} p={8} style={{ border: '1px solid #E6E6E6', borderRadius: 8, cursor: 'pointer' }} {...props}>
 			<Stack>
 				<Box pos='relative'>
 					<Image src={data?.image} alt='karaca' width='100%' height={305} />

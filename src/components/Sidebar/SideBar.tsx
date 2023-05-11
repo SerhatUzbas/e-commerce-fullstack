@@ -14,7 +14,11 @@ export interface SideBarProps {
 const SideBar = ({ data, ...props }: SideBarProps) => {
 	return (
 		<Box {...props}>
-			<Stack>{data?.map((item) => (item.isCheckBox ? <CheckSide title={item?.title} data={item?.data} /> : <TextSide title={item?.title} data={item?.data} />))}</Stack>
+			<Stack>
+				{data?.map((item) =>
+					item.isCheckBox ? <CheckSide key={item?.title} title={item?.title} data={item?.data} /> : <TextSide key={item?.title} title={item?.title} data={item?.data} />
+				)}
+			</Stack>
 		</Box>
 	)
 }

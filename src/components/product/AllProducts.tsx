@@ -1,7 +1,6 @@
-import { Box, BoxProps, Flex, Grid, Select, Stack, Text } from '@mantine/core'
+import { Box, Flex, Grid, Select, Stack, Text } from '@mantine/core'
 import ProductHighlight, { ProductHighlightProp } from './ProductHighlight'
-import { ALL_PRODUCTS, PRODUCT_HL } from 'src/lib/CONSTANTS'
-import useStyles, { source_sans_semibold } from 'src/styles/global_classes'
+import useStyles from 'src/styles/global_classes'
 
 interface AllProductsProps {
 	searchResult: string
@@ -16,7 +15,7 @@ const AllProducts = ({ searchResult, data, orderData }: AllProductsProps) => {
 			<Stack>
 				<Flex justify='space-between' align='center'>
 					<Text className={classes.searchResultText}>{searchResult}</Text>
-					<Select placeholder='Önerilen Sıralama' data={orderData} />
+					<Select size='xs' placeholder='Önerilen Sıralama' data={orderData} styles={{ input: { height: 20 } }} />
 				</Flex>
 				<Grid>
 					{data?.map((item, i) => (
