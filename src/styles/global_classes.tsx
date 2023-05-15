@@ -12,6 +12,7 @@ const useStyles = createStyles(() => ({
 	searchResultText: { fontSize: 18, color: '#333333', ...source_sans_semibold.style },
 	accordionTitle: { fontSize: 14, color: '#333333', ...source_sans_semibold.style },
 	accordionItem: { fontSize: 13, color: '1B1B1B', ...source_sans.style },
+	font20400: { fontSize: 20, color: '#333333', ...source_sans.style },
 }))
 
 export default useStyles
