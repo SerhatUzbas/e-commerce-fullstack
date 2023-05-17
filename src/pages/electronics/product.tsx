@@ -1,14 +1,19 @@
 import React from 'react'
-import { Box } from '@mantine/core'
+import { Box, Stack } from '@mantine/core'
 import ProductDetailed from 'src/components/product/ProductDetailed'
 import Layout from 'src/layouts/Layout'
+import RelatedProducts from 'src/components/product/Related'
+import { ALL_PRODUCTS, COMMENTS } from 'src/lib/CONSTANTS'
+import Comments from 'src/components/product/Comment'
 
 const PRODUCT_DATA = {
-	brand: { id: 1, name: 'Tonny Black' },
+	brand: { id: 1, name: 'Tonny Black', rating: 4 },
 	category: { id: 2, name: 'Ayakkabı' },
-	campaigns: { id: 3, name: 'Kargo Bedava' },
+	campaigns: [{ id: 3, name: 'Kargo Bedava' }],
 	name: 'Erkek Siyah Kırmızı Rahat Kalıp Termo Taban Bağcıklı Sneaker',
 	id: 4,
+	image: '/product.webp',
+	size: 42,
 	price: { originalPrice: 5, discountedPrice: 230 },
 	color: 'kırmızı',
 	rating: { averageRating: 4.5, totalCount: 4124 },
@@ -28,7 +33,11 @@ const PRODUCT_DATA = {
 const Product = () => {
 	return (
 		<Layout>
-			<ProductDetailed data={PRODUCT_DATA} />
+			<Stack spacing={40}>
+				<ProductDetailed data={PRODUCT_DATA} />
+				<RelatedProducts data={ALL_PRODUCTS} />
+				<Comments comments={COMMENTS.comments} totalCount={COMMENTS.totalCount} rating={COMMENTS.rating} />
+			</Stack>
 		</Layout>
 	)
 }

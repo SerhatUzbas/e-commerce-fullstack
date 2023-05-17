@@ -2,6 +2,7 @@ import { ProductHighlightProp } from '../components/product/ProductHighlight'
 import { CategoryNavProps } from '../components/category/CategoryNav'
 import { CategoryPopoverProps } from '../components/category/CategoryPopover'
 import { SideBarProps } from 'src/components/Sidebar/SideBar'
+import { CommentsProps } from 'src/components/product/Comment'
 
 export const CONSTANT_CAT_LIST = [
 	{
@@ -375,6 +376,7 @@ export const CONSTANT_CAT_LIST = [
 ]
 
 export const PRODUCT_HL: ProductHighlightProp['data'] = {
+	id: 4125,
 	image: '/product.webp',
 	brand: 'Adidas',
 	model: 'aditru',
@@ -391,6 +393,7 @@ export const PRODUCT_HL: ProductHighlightProp['data'] = {
 
 export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -405,6 +408,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -419,6 +423,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -433,6 +438,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -447,6 +453,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -461,6 +468,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -475,6 +483,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -489,6 +498,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -503,6 +513,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -517,6 +528,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -531,6 +543,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -545,6 +558,7 @@ export const ALL_PRODUCTS: ProductHighlightProp['data'][] = [
 		isMostSelling: true,
 	},
 	{
+		id: 5123,
 		image: '/product.webp',
 		brand: 'Adidas',
 		model: 'aditru',
@@ -680,3 +694,65 @@ export const SIDEBAR_DATA: SideBarProps['data'] = [
 		],
 	},
 ]
+
+export const COMMENTS: CommentsProps = {
+	totalCount: 123,
+	rating: 4,
+	comments: [
+		{
+			id: 123,
+			username: 'Sait Faik Abasıyanık',
+			userId: 14231897,
+			rating: 4.6,
+			content: 'Yorumlara bakarak ayakkabı numaramın bir numara üstünü aldım. Çok rahat oldu. Gayet hoş duran ve sağlam bir ayakkabı.',
+			favCount: 12,
+			size: 42,
+			seller: { name: 'Uzbaşlar', id: 31 },
+			date: '21-01-2023',
+		},
+		{
+			id: 124123,
+			username: 'Sait Faik Abasıyanık',
+			userId: 14231897,
+			rating: 4,
+			content: 'Çok güzel bir ürün herkese öneriyorum',
+			favCount: 12,
+			size: 42,
+			seller: { name: 'Uzbaşlar', id: 31 },
+			date: '21-01-2023',
+		},
+		{
+			id: 121243,
+			username: 'Sait Faik Abasıyanık',
+			userId: 14231897,
+			rating: 4,
+			content: 'Çok güzel bir ürün herkese öneriyorum',
+			favCount: 12,
+			size: 42,
+			seller: { name: 'Uzbaşlar', id: 31 },
+			date: '21-01-2023',
+		},
+		{
+			id: 1241233,
+			username: 'Sait Faik Abasıyanık',
+			userId: 14231897,
+			rating: 4,
+			content: 'Çok güzel bir ürün herkese öneriyorum',
+			favCount: 12,
+			size: 42,
+			seller: { name: 'Uzbaşlar', id: 31 },
+			date: '21-01-2023',
+		},
+		{
+			id: 12124123,
+			username: 'Sait Faik Abasıyanık',
+			userId: 14231897,
+			rating: 4,
+			content: 'Çok güzel bir ürün herkese öneriyorum',
+			favCount: 12,
+			size: 42,
+			seller: { name: 'Uzbaşlar', id: 31 },
+			date: '21-01-2023',
+		},
+	],
+}

@@ -2,14 +2,17 @@ import { Box, BoxProps, Flex, Grid, Rating, Stack, Text, Image as MantineImage, 
 import Image from 'next/image'
 import { useState } from 'react'
 import useStyles, { source_sans, source_sans_semibold } from 'src/styles/global_classes'
-import { Hanger, Heart, Tex } from 'tabler-icons-react'
+import { Heart } from 'tabler-icons-react'
+import HighlightedInformation from './HighlightedInformation'
 
-interface ProductDetailedProps extends BoxProps {
+export interface ProductDetailedProps extends BoxProps {
 	data: {
-		brand: { id: number; name: string }
+		brand: { id: number; name: string; rating: number }
 		category: { id: number; name: string }
-		campaigns: { id: number; name: string }
+		campaigns: { id: number; name: string }[]
+		image: string
 		name: string
+		size: number | string
 		id: number
 		price: { originalPrice: number; discountedPrice: number }
 		color?: string
@@ -29,7 +32,7 @@ const ProductDetailed = ({ data, ...props }: ProductDetailedProps) => {
 		<Box {...props}>
 			<Grid>
 				<Grid.Col md={5}>
-					<Image src='/product.webp' width={402} height={602} alt='' />
+					<Image src={data?.image} width={402} height={602} alt='' />
 				</Grid.Col>
 				<Grid.Col md={7}>
 					<Stack spacing={15}>
@@ -85,9 +88,11 @@ const ProductDetailed = ({ data, ...props }: ProductDetailedProps) => {
 								</Flex>
 							</Stack>
 						</Stack>
+						<HighlightedInformation seller={data?.seller?.name} />
 					</Stack>
 				</Grid.Col>
 			</Grid>
+			<Divider mt={20} color='rgba(151,151,151,.2)' />
 		</Box>
 	)
 }

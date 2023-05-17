@@ -54,7 +54,7 @@ interface BrandBoxContainerProps {
 const BrandBoxContainer = ({ data }: BrandBoxContainerProps) => {
 	return (
 		<Box>
-			<Carousel align={'start'} slideGap={47} slideSize='7%' dragFree containScroll='keepSnaps' styles={{ control: { marginTop: -15, marginRight: -50, marginLeft: -50 } }}>
+			<Carousel align='start' slideGap={47} slideSize='7%' dragFree containScroll='keepSnaps' styles={{ control: { marginTop: -15, marginRight: -50, marginLeft: -50 } }}>
 				{data?.map((item) => (
 					<Carousel.Slide key={item?.src}>
 						<BrandBox name={item.name} src={item.src} />

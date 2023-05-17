@@ -7,6 +7,7 @@ import Like from './Like'
 
 export interface ProductHighlightProp extends BoxProps {
 	data: {
+		id: string | number
 		image: string
 		brand: string
 		model: string

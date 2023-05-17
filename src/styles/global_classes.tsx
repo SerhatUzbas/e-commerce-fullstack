@@ -1,6 +1,7 @@
 import { createStyles } from '@mantine/core'
 import { Source_Sans_Pro } from 'next/font/google'
 
+export const default_font = Source_Sans_Pro({ weight: ['200', '300', '400', '600', '700', '900'], subsets: ['latin'] })
 export const source_sans = Source_Sans_Pro({ weight: '400', subsets: ['latin'] })
 export const source_sans_semibold = Source_Sans_Pro({ weight: '600', subsets: ['latin'] })
 export const source_sans_bold = Source_Sans_Pro({ weight: '700', subsets: ['latin'] })
