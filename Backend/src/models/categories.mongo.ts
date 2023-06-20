@@ -5,7 +5,7 @@ type Category = {
 	id: string
 }
 
-const categorySchema = new Schema<Category>({
+const CategorySchema = new Schema<Category>({
 	id: { type: String, required: true },
 	name: { type: String, required: true },
 })

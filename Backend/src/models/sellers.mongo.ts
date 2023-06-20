@@ -1,4 +1,4 @@
-import { Schema } from 'mongoose'
+import mongoose, { Schema } from 'mongoose'
 
 type SellerType = {
 	name: string
@@ -7,9 +7,11 @@ type SellerType = {
 	voteCount: number
 }
 
-const categorySchema = new Schema<SellerType>({
+const SellerSchema = new Schema<SellerType>({
 	id: { type: String, required: true },
 	name: { type: String, required: true },
 	rating: { type: Number, required: true },
 	voteCount: { type: Number, required: true },
 })
+
+export const Sellers = mongoose.model('category', SellerSchema)

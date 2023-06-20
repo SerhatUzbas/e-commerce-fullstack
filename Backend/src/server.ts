@@ -1,5 +1,5 @@
 import { config } from 'dotenv'
-import express, { Application, Request, Response } from 'express'
+import express, { Application } from 'express'
 import mongoose from 'mongoose'
 import { userRouter } from './routes/users.controller'
 import cors from 'cors'
@@ -16,9 +16,9 @@ app.use(
 	})
 )
 
-app.get('/', (req: Request, res: Response) => {
-	res.send('Express server with TypeScript')
-})
+// app.get('/', (req: Request, res: Response) => {
+// 	res.send('Express server with TypeScript')
+// })
 app.use(userRouter)
 
 const PORT = process.env.PORT || 4000

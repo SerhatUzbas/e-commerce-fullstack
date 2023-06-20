@@ -1,4 +1,3 @@
-import { Request, Response } from 'express'
 import { User, Users } from './users.mongo'
 
 export const getUsers = async () => {

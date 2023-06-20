@@ -28,7 +28,7 @@ export type ProductComments = {
 	dislikeCount: number
 }
 
-const productSchema = new Schema<Product>({
+const ProductSchema = new Schema<Product>({
 	brand: { type: Number, required: true },
 	category: { type: Number, required: true },
 	campaigns: { type: [Number], required: true }, // Via id
@@ -42,4 +42,4 @@ const productSchema = new Schema<Product>({
 	comments: { type: [Number] }, // Via id
 })
 
-export const Users = mongoose.model('product', productSchema)
+export const Products = mongoose.model('product', ProductSchema)
